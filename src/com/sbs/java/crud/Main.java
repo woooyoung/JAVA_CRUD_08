@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		System.out.println("==프로그램 시작==");
+
 		Scanner sc = new Scanner(System.in);
 		int lastArticleId = 0;
 
@@ -39,11 +40,11 @@ public class Main {
 					System.out.println("게시물이 없습니다.");
 					continue;
 				}
-				System.out.println("번호  /  조회  /  제목");
+				System.out.println("번호  |  조회 | 제목");
 				for (int i = articles.size() - 1; i >= 0; i--) {
 					Article article = articles.get(i);
 
-					System.out.printf("%d  /  %d  /  %s\n", article.id, article.hit, article.title);
+					System.out.printf("%4d | %4d | %s\n", article.id, article.hit, article.title);
 				}
 
 			} else if (command.startsWith("article detail ")) {
@@ -137,6 +138,7 @@ public class Main {
 
 		System.out.println("==프로그램 끝==");
 	}
+
 }
 
 class Article {
