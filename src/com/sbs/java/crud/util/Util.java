@@ -1,4 +1,4 @@
-package com.sbs.java.crud;
+package com.sbs.java.crud.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
